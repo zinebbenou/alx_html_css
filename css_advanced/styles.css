@@ -79,3 +79,42 @@ nav ul li a {
     font-size: 1.2rem; /* Adjust based on Figma */
     color: #555; /* Example text color for the citation */
 }
+
+.videos-list {
+    padding: 40px 20px;
+    background-color: #f9f9f9; /* Example background color */
+}
+
+.videos-list h2 {
+    text-align: center;
+    font-size: 2rem; /* Adjust based on Figma */
+    margin-bottom: 20px;
+}
+
+.videos-list .video-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.videos-list .video-item img {
+    width: 100%; /* Adjust width as needed */
+    max-width: 400px; /* Example maximum width */
+    border-radius: 8px; /* Adjust border radius as needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Example shadow */
+    margin-bottom: 10px;
+}
+
+.videos-list .video-item h3 {
+    font-size: 1.5rem; /* Adjust based on Figma */
+    margin: 0;
+    text-align: center;
+}
+
+.videos-list .video-item p {
+    font-size: 1rem; /* Adjust based on Figma */
+    color: #666; /* Example text color */
+    text-align: center;
+    margin: 10px 0 0;
+}
