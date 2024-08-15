@@ -1,4 +1,6 @@
 /* styles.css */
+
+/* Existing styles */
 body {
     font-family: 'Source Sans Pro', sans-serif;
     color: #333;
@@ -117,4 +119,66 @@ nav ul li a {
     color: #666; /* Example text color */
     text-align: center;
     margin: 10px 0 0;
+}
+
+/* New Membership Section Styles */
+.membership {
+    background-color: #e0f7fa; /* Example background color */
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 8px; /* Adjust based on Figma */
+    margin: 20px 0;
+}
+
+.membership h2 {
+    font-size: 2.5rem; /* Adjust based on Figma */
+    margin-bottom: 20px;
+    color: #00796b; /* Example color */
+}
+
+.membership p {
+    font-size: 1.2rem; /* Adjust based on Figma */
+    color: #004d40; /* Example text color */
+    margin: 0 0 20px;
+}
+
+.membership .membership-options {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Adjust spacing between options */
+}
+
+.membership .membership-option {
+    background-color: #ffffff; /* Example card background color */
+    border: 1px solid #b2dfdb; /* Example border color */
+    border-radius: 8px; /* Example border radius */
+    padding: 20px;
+    width: 100%; /* Full width for responsiveness */
+    max-width: 300px; /* Adjust based on design */
+}
+
+.membership .membership-option h3 {
+    font-size: 1.8rem; /* Adjust based on Figma */
+    margin: 0 0 10px;
+}
+
+.membership .membership-option p {
+    font-size: 1rem; /* Adjust based on Figma */
+    color: #004d40; /* Example text color */
+    margin: 0 0 20px;
+}
+
+.membership .membership-option button {
+    background-color: #00796b; /* Example button background color */
+    color: #ffffff; /* Button text color */
+    border: none;
+    border-radius: 4px; /* Button border radius */
+    padding: 10px 20px;
+    font-size: 1rem; /* Adjust based on Figma */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.membership .membership-option button:hover {
+    background-color: #004d40; /* Example button hover color */
 }

@@ -8,59 +8,72 @@
 </head>
 <body>
     <header>
-        <h1>Welcome to My CSS Advanced Project</h1>
+        <h1>CSS Advanced Project</h1>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#quotes">Quotes</a></li>
+                <li><a href="#videos">Videos</a></li>
+                <li><a href="#membership">Membership</a></li>
             </ul>
         </nav>
     </header>
+
     <section class="banner">
-        <h2>Your Banner Heading</h2>
-        <p>Your banner description or subtitle goes here.</p>
+        <h2>Welcome to Our CSS Advanced Project</h2>
+        <p>Explore our amazing content and resources.</p>
     </section>
-    <section class="quote-section">
+
+    <section class="quote-section" id="quotes">
         <blockquote>
-            "The only limit to our realization of tomorrow is our doubts of today."
+            "Design is not just what it looks like and feels like. Design is how it works." 
+            <cite>- Steve Jobs</cite>
         </blockquote>
-        <cite>- Franklin D. Roosevelt</cite>
     </section>
-    <section class="videos-list">
-        <h2>Video Gallery</h2>
+
+    <section class="videos-list" id="videos">
+        <h2>Featured Videos</h2>
         <div class="video-item">
-            <img src="path/to/video-thumbnail1.jpg" alt="Video 1 Thumbnail">
+            <img src="path/to/video-thumbnail1.jpg" alt="Video 1">
             <h3>Video Title 1</h3>
-            <p>Brief description of Video 1.</p>
+            <p>Description of video 1.</p>
         </div>
         <div class="video-item">
-            <img src="path/to/video-thumbnail2.jpg" alt="Video 2 Thumbnail">
+            <img src="path/to/video-thumbnail2.jpg" alt="Video 2">
             <h3>Video Title 2</h3>
-            <p>Brief description of Video 2.</p>
+            <p>Description of video 2.</p>
         </div>
-        <!-- Add more video items as needed -->
+        <div class="video-item">
+            <img src="path/to/video-thumbnail3.jpg" alt="Video 3">
+            <h3>Video Title 3</h3>
+            <p>Description of video 3.</p>
+        </div>
     </section>
-    <main>
-        <section>
-            <h2>About Us</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut turpis non lorem laoreet vehicula.</p>
-        </section>
-        <section>
-            <h2>Contact Us</h2>
-            <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </section>
-    </main>
+
+    <section class="membership" id="membership">
+        <h2>Join Our Community</h2>
+        <p>Become a member and enjoy exclusive benefits and content. Choose the plan that best fits your needs.</p>
+        <div class="membership-options">
+            <div class="membership-option">
+                <h3>Basic Plan</h3>
+                <p>Access to basic features and content.</p>
+                <button>Join Now</button>
+            </div>
+            <div class="membership-option">
+                <h3>Premium Plan</h3>
+                <p>Access to all features and exclusive content.</p>
+                <button>Join Now</button>
+            </div>
+            <div class="membership-option">
+                <h3>VIP Plan</h3>
+                <p>All benefits of the Premium Plan plus VIP support.</p>
+                <button>Join Now</button>
+            </div>
+        </div>
+    </section>
+
     <footer>
-        <p>&copy; 2024 My CSS Advanced Project</p>
+        <p>&copy; 2024 CSS Advanced Project. All rights reserved.</p>
     </footer>
 </body>
 </html>
