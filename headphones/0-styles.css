@@ -1,0 +1,49 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variables */
+:root {
+    --primary-color: #ffffff; /* White */
+    --secondary-color: #333333; /* Dark Gray */
+    --font-family: 'Arial', sans-serif;
+    --header-background-color: #0044cc; /* Dark Blue */
+    --header-text-color: #ffffff; /* White */
+}
+
+/* General styles */
+body {
+    font-family: var(--font-family);
+    color: var(--primary-color);
+}
+
+header {
+    width: 100%;
+    background-color: var(--header-background-color);
+    padding: 20px;
+    text-align: center;
+}
+
+.hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    color: var(--header-text-color);
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: var(--header-text-color);
+}
+
+p {
+    font-size: 1.2rem;
+    color: var(--header-text-color);
+}
