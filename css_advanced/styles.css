@@ -56,54 +56,26 @@ nav ul li a {
     margin: 20px 0 0;
 }
 
-/* Additional styles for the rest of the page */
-main {
-    padding: 20px;
-}
-
-section {
-    margin-bottom: 20px;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-form label {
-    margin: 5px 0;
-    font-weight: bold;
-}
-
-form input, form textarea {
-    padding: 10px;
-    margin: 5px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 1rem;
-}
-
-form button {
-    padding: 10px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 1rem;
-}
-
-form button:hover {
-    background-color: #555;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
+.quote-section {
+    background-color: #f0f8ff; /* Example background color for quotes */
+    padding: 40px 20px;
     text-align: center;
-    padding: 10px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    border-top: 2px solid #ccc;
+    border-left: 5px solid #ff6347; /* Example border color */
+    border-right: 5px solid #ff6347; /* Example border color */
+    margin: 20px 0;
+}
+
+.quote-section blockquote {
+    font-size: 1.5rem; /* Adjust based on Figma */
+    font-style: italic;
+    margin: 0;
+    padding: 20px;
+    color: #333; /* Example text color for the quote */
+}
+
+.quote-section cite {
+    display: block;
+    margin-top: 10px;
+    font-size: 1.2rem; /* Adjust based on Figma */
+    color: #555; /* Example text color for the citation */
 }
