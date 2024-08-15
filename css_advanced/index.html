@@ -7,100 +7,77 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Header Section -->
     <header>
-        <h1>CSS Advanced Project</h1>
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#quotes">Quotes</a></li>
-                <li><a href="#videos">Videos</a></li>
-                <li><a href="#membership">Membership</a></li>
-                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
+    <!-- Banner Section -->
     <section class="banner">
-        <h2>Welcome to Our CSS Advanced Project</h2>
-        <p>Explore our amazing content and resources.</p>
+        <h1>Welcome to Our Website</h1>
+        <p>Your journey to excellence starts here.</p>
     </section>
 
-    <section class="quote-section" id="quotes">
+    <!-- Quote Section -->
+    <section class="quote-section">
         <blockquote>
-            "Design is not just what it looks like and feels like. Design is how it works."
-            <cite>- Steve Jobs</cite>
+            "The best way to predict the future is to create it."
         </blockquote>
     </section>
 
-    <section class="videos-list" id="videos">
-        <h2>Featured Videos</h2>
+    <!-- Videos List Section -->
+    <section class="videos-list">
         <div class="video-item">
-            <img src="path/to/video-thumbnail1.jpg" alt="Video 1">
-            <h3>Video Title 1</h3>
-            <p>Description of video 1.</p>
+            <img src="video-thumbnail1.jpg" alt="Video 1">
+            <p>Video 1 Description</p>
         </div>
         <div class="video-item">
-            <img src="path/to/video-thumbnail2.jpg" alt="Video 2">
-            <h3>Video Title 2</h3>
-            <p>Description of video 2.</p>
+            <img src="video-thumbnail2.jpg" alt="Video 2">
+            <p>Video 2 Description</p>
         </div>
-        <div class="video-item">
-            <img src="path/to/video-thumbnail3.jpg" alt="Video 3">
-            <h3>Video Title 3</h3>
-            <p>Description of video 3.</p>
-        </div>
+        <!-- Add more video items as needed -->
     </section>
 
-    <section class="membership" id="membership">
-        <h2>Join Our Community</h2>
-        <p>Become a member and enjoy exclusive benefits and content. Choose the plan that best fits your needs.</p>
+    <!-- Membership Section -->
+    <section class="membership">
+        <h2>Join Our Membership</h2>
         <div class="membership-options">
             <div class="membership-option">
                 <h3>Basic Plan</h3>
-                <p>Access to basic features and content.</p>
-                <button>Join Now</button>
+                <p>Details about the Basic Plan.</p>
             </div>
             <div class="membership-option">
                 <h3>Premium Plan</h3>
-                <p>Access to all features and exclusive content.</p>
-                <button>Join Now</button>
+                <p>Details about the Premium Plan.</p>
             </div>
-            <div class="membership-option">
-                <h3>VIP Plan</h3>
-                <p>All benefits of the Premium Plan plus VIP support.</p>
-                <button>Join Now</button>
-            </div>
+            <!-- Add more membership options as needed -->
         </div>
     </section>
 
-    <section class="faq-section" id="faq">
+    <!-- FAQ Section -->
+    <section class="faq-section">
         <h2>Frequently Asked Questions</h2>
         <div class="faq-item">
-            <h3>What is the purpose of this project?</h3>
-            <p>This project is designed to showcase advanced CSS techniques and best practices for styling web pages.</p>
+            <h3>What is your return policy?</h3>
+            <p>Our return policy is ...</p>
         </div>
         <div class="faq-item">
             <h3>How can I contact support?</h3>
-            <p>You can contact support via the contact form on our website or email us at support@example.com.</p>
+            <p>You can contact support by ...</p>
         </div>
-        <div class="faq-item">
-            <h3>Where can I find more resources?</h3>
-            <p>Additional resources are available on our website and through the links provided in the project documentation.</p>
-        </div>
+        <!-- Add more FAQ items as needed -->
     </section>
 
+    <!-- Footer Section -->
     <footer>
-        <p>&copy; 2024 CSS Advanced Project. All rights reserved.</p>
+        <p>&copy; 2024 Your Company Name. All rights reserved.</p>
     </footer>
-
-    <script>
-        // JavaScript to toggle FAQ answers
-        document.querySelectorAll('.faq-item h3').forEach((header) => {
-            header.addEventListener('click', () => {
-                const faqItem = header.parentElement;
-                faqItem.classList.toggle('active');
-            });
-        });
-    </script>
 </body>
 </html>
