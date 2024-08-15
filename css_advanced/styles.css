@@ -7,34 +7,56 @@ body {
 }
 
 header {
-    background-color: #f4f4f4;
+    background-color: #005f73; /* Example background color */
+    color: #ffffff; /* Example text color */
     padding: 20px;
     text-align: center;
-    border-bottom: 2px solid #ccc;
+    border-bottom: 4px solid #0a9396; /* Example border color */
 }
 
 header h1 {
     margin: 0;
-    font-size: 2rem;
+    font-size: 2.5rem; /* Adjust based on Figma */
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
-    margin: 10px 0 0;
+    margin: 20px 0 0;
 }
 
 nav ul li {
     display: inline;
-    margin-right: 10px;
+    margin-right: 15px; /* Adjust spacing as needed */
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: #ffffff; /* Adjust based on Figma */
     font-weight: bold;
+    font-size: 1.1rem; /* Adjust based on Figma */
 }
 
+.banner {
+    background-image: url('path/to/banner-image.jpg'); /* Replace with the correct image path */
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the image */
+    color: #ffffff; /* Text color for the banner */
+    padding: 40px 20px; /* Adjust padding as needed */
+    text-align: center;
+}
+
+.banner h2 {
+    margin: 0;
+    font-size: 2rem; /* Adjust based on Figma */
+}
+
+.banner p {
+    font-size: 1.2rem; /* Adjust based on Figma */
+    margin: 20px 0 0;
+}
+
+/* Additional styles for the rest of the page */
 main {
     padding: 20px;
 }
