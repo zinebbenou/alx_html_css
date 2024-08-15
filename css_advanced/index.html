@@ -15,6 +15,7 @@
                 <li><a href="#quotes">Quotes</a></li>
                 <li><a href="#videos">Videos</a></li>
                 <li><a href="#membership">Membership</a></li>
+                <li><a href="#faq">FAQ</a></li>
             </ul>
         </nav>
     </header>
@@ -26,7 +27,7 @@
 
     <section class="quote-section" id="quotes">
         <blockquote>
-            "Design is not just what it looks like and feels like. Design is how it works." 
+            "Design is not just what it looks like and feels like. Design is how it works."
             <cite>- Steve Jobs</cite>
         </blockquote>
     </section>
@@ -72,8 +73,34 @@
         </div>
     </section>
 
+    <section class="faq-section" id="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <h3>What is the purpose of this project?</h3>
+            <p>This project is designed to showcase advanced CSS techniques and best practices for styling web pages.</p>
+        </div>
+        <div class="faq-item">
+            <h3>How can I contact support?</h3>
+            <p>You can contact support via the contact form on our website or email us at support@example.com.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Where can I find more resources?</h3>
+            <p>Additional resources are available on our website and through the links provided in the project documentation.</p>
+        </div>
+    </section>
+
     <footer>
         <p>&copy; 2024 CSS Advanced Project. All rights reserved.</p>
     </footer>
+
+    <script>
+        // JavaScript to toggle FAQ answers
+        document.querySelectorAll('.faq-item h3').forEach((header) => {
+            header.addEventListener('click', () => {
+                const faqItem = header.parentElement;
+                faqItem.classList.toggle('active');
+            });
+        });
+    </script>
 </body>
 </html>

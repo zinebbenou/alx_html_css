@@ -1,184 +1,147 @@
 /* styles.css */
 
-/* Existing styles */
+/* Base Styles */
 body {
     font-family: 'Source Sans Pro', sans-serif;
     color: #333;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 header {
-    background-color: #005f73; /* Example background color */
-    color: #ffffff; /* Example text color */
+    background-color: #00796b; /* Example color */
+    color: white;
     padding: 20px;
     text-align: center;
-    border-bottom: 4px solid #0a9396; /* Example border color */
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2.5rem; /* Adjust based on Figma */
 }
 
 nav ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
-    margin: 20px 0 0;
+    margin: 0;
 }
 
 nav ul li {
     display: inline;
-    margin-right: 15px; /* Adjust spacing as needed */
+    margin: 0 10px;
 }
 
 nav ul li a {
+    color: white;
     text-decoration: none;
-    color: #ffffff; /* Adjust based on Figma */
-    font-weight: bold;
-    font-size: 1.1rem; /* Adjust based on Figma */
 }
 
 .banner {
-    background-image: url('path/to/banner-image.jpg'); /* Replace with the correct image path */
-    background-size: cover; /* Cover the entire section */
-    background-position: center; /* Center the image */
-    color: #ffffff; /* Text color for the banner */
-    padding: 40px 20px; /* Adjust padding as needed */
+    background-color: #e0f2f1; /* Example color */
+    padding: 40px;
     text-align: center;
-}
-
-.banner h2 {
-    margin: 0;
-    font-size: 2rem; /* Adjust based on Figma */
-}
-
-.banner p {
-    font-size: 1.2rem; /* Adjust based on Figma */
-    margin: 20px 0 0;
 }
 
 .quote-section {
-    background-color: #f0f8ff; /* Example background color for quotes */
-    padding: 40px 20px;
+    padding: 20px;
+    background-color: #f1f8f7; /* Example color */
     text-align: center;
-    border-left: 5px solid #ff6347; /* Example border color */
-    border-right: 5px solid #ff6347; /* Example border color */
-    margin: 20px 0;
 }
 
 .quote-section blockquote {
-    font-size: 1.5rem; /* Adjust based on Figma */
-    font-style: italic;
+    font-size: 1.5rem;
     margin: 0;
-    padding: 20px;
-    color: #333; /* Example text color for the quote */
-}
-
-.quote-section cite {
-    display: block;
-    margin-top: 10px;
-    font-size: 1.2rem; /* Adjust based on Figma */
-    color: #555; /* Example text color for the citation */
+    padding: 10px;
+    border-left: 4px solid #00796b; /* Example color */
 }
 
 .videos-list {
-    padding: 40px 20px;
-    background-color: #f9f9f9; /* Example background color */
+    padding: 20px;
 }
 
-.videos-list h2 {
-    text-align: center;
-    font-size: 2rem; /* Adjust based on Figma */
+.video-item {
     margin-bottom: 20px;
 }
 
-.videos-list .video-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
+.video-item img {
+    width: 100%;
+    height: auto;
 }
 
-.videos-list .video-item img {
-    width: 100%; /* Adjust width as needed */
-    max-width: 400px; /* Example maximum width */
-    border-radius: 8px; /* Adjust border radius as needed */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Example shadow */
-    margin-bottom: 10px;
-}
-
-.videos-list .video-item h3 {
-    font-size: 1.5rem; /* Adjust based on Figma */
-    margin: 0;
-    text-align: center;
-}
-
-.videos-list .video-item p {
-    font-size: 1rem; /* Adjust based on Figma */
-    color: #666; /* Example text color */
-    text-align: center;
-    margin: 10px 0 0;
-}
-
-/* New Membership Section Styles */
 .membership {
-    background-color: #e0f7fa; /* Example background color */
+    background-color: #ffffff; /* Example background color */
     padding: 40px 20px;
     text-align: center;
-    border-radius: 8px; /* Adjust based on Figma */
+}
+
+.membership-options {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.membership-option {
+    background-color: #e0f2f1; /* Example background color */
+    padding: 20px;
+    border-radius: 8px;
+    width: 250px;
+}
+
+.membership-option h3 {
+    margin: 0;
+}
+
+.faq-section {
+    background-color: #ffffff; /* Example background color */
+    padding: 40px 20px;
+    border-radius: 8px; /* Rounded corners for the section */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Example shadow */
     margin: 20px 0;
 }
 
-.membership h2 {
+.faq-section h2 {
     font-size: 2.5rem; /* Adjust based on Figma */
-    margin-bottom: 20px;
     color: #00796b; /* Example color */
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-.membership p {
-    font-size: 1.2rem; /* Adjust based on Figma */
-    color: #004d40; /* Example text color */
-    margin: 0 0 20px;
+.faq-item {
+    margin-bottom: 20px;
 }
 
-.membership .membership-options {
-    display: flex;
-    justify-content: center;
-    gap: 20px; /* Adjust spacing between options */
-}
-
-.membership .membership-option {
-    background-color: #ffffff; /* Example card background color */
-    border: 1px solid #b2dfdb; /* Example border color */
-    border-radius: 8px; /* Example border radius */
-    padding: 20px;
-    width: 100%; /* Full width for responsiveness */
-    max-width: 300px; /* Adjust based on design */
-}
-
-.membership .membership-option h3 {
+.faq-item h3 {
     font-size: 1.8rem; /* Adjust based on Figma */
-    margin: 0 0 10px;
-}
-
-.membership .membership-option p {
-    font-size: 1rem; /* Adjust based on Figma */
-    color: #004d40; /* Example text color */
-    margin: 0 0 20px;
-}
-
-.membership .membership-option button {
-    background-color: #00796b; /* Example button background color */
-    color: #ffffff; /* Button text color */
-    border: none;
-    border-radius: 4px; /* Button border radius */
-    padding: 10px 20px;
-    font-size: 1rem; /* Adjust based on Figma */
+    color: #004d40; /* Example color */
     cursor: pointer;
+    margin: 0;
+    padding: 15px;
+    background-color: #e0f2f1; /* Example background color */
+    border-radius: 8px; /* Rounded corners for the question */
     transition: background-color 0.3s ease;
 }
 
-.membership .membership-option button:hover {
-    background-color: #004d40; /* Example button hover color */
+.faq-item h3:hover {
+    background-color: #b2dfdb; /* Hover effect */
+}
+
+.faq-item p {
+    font-size: 1rem; /* Adjust based on Figma */
+    color: #666; /* Example text color */
+    margin: 10px 0 0;
+    display: none; /* Hide answers by default */
+    padding: 15px;
+    background-color: #f1f8f7; /* Example background color for answers */
+    border-radius: 8px; /* Rounded corners for the answer */
+}
+
+.faq-item.active p {
+    display: block; /* Show answer when active */
+}
+
+footer {
+    background-color: #00796b; /* Example color */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
