@@ -1,0 +1,130 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variables */
+:root {
+    --primary-color: #ffffff; /* White */
+    --secondary-color: #333333; /* Dark Gray */
+    --font-family: 'Arial', sans-serif;
+    --header-background-color: #0044cc; /* Dark Blue */
+    --header-text-color: #ffffff; /* White */
+    --section-background-color: #f4f4f4; /* Light Gray */
+    --icon-size: 50px; /* Icon size */
+}
+
+/* General styles */
+body {
+    font-family: var(--font-family);
+    color: var(--primary-color);
+}
+
+/* Header / Hero Section */
+header {
+    width: 100%;
+    background-color: var(--header-background-color);
+    padding: 20px;
+    text-align: center;
+}
+
+.hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    color: var(--header-text-color);
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: var(--header-text-color);
+}
+
+p {
+    font-size: 1.2rem;
+    color: var(--header-text-color);
+}
+
+/* "What We Do" Section */
+.what-we-do {
+    background-color: var(--section-background-color);
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.what-we-do .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.icons-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.icon {
+    flex: 1;
+    max-width: 200px;
+    margin: 20px;
+    text-align: center;
+}
+
+.icon img {
+    width: var(--icon-size);
+    height: var(--icon-size);
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+p {
+    font-size: 1rem;
+}
+
+/* "Our Results" Section */
+.our-results {
+    background-color: var(--section-background-color);
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.our-results .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.results-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.result-item {
+    flex: 1;
+    max-width: 300px;
+    margin: 20px;
+    text-align: center;
+}
+
+.result-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.result-item p {
+    font-size: 1rem;
+}
