@@ -43,3 +43,21 @@ footer {
     background: #f1f1f1; /* Optional: Add background color for visibility */
     padding: 10px; /* Optional: Add padding */
 }
+
+/* Responsive Design: Adjust layout for small screens */
+@media (max-width: 768px) {
+    body.works_on_smartphone {
+        /* Allow header and footer to take full width */
+        display: block;
+    }
+
+    main {
+        flex-direction: column; /* Stack article and aside vertically */
+    }
+
+    article, aside {
+        flex: none; /* Reset flex values */
+        width: 100%; /* Make each take full width */
+        overflow-y: visible; /* Allow full visibility */
+    }
+}
