@@ -1,35 +1,41 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Tweets Page</title>
-</head>
-<body>
-    <header>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="tweets.html">Tweets</a></li>
-        </ul>
-    </header>
-    
-    <main>
-        <article>
-            <!-- Embed a tweet -->
-            <blockquote class="twitter-tweet">
-                <p lang="en" dir="ltr">This is an example tweet.</p>&mdash; User (@username) <a href="https://twitter.com/username/status/1234567890">Date</a>
-            </blockquote> 
-            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+/* Ensure the body takes up the full viewport height */
+html, body {
+    height: 100%;
+    margin: 0;
+}
 
-            <p>Back to <a href="index.html">Home</a></p>
-        </article>
-        <aside>
-            <p>placeholder to add comment thread later</p>
-        </aside>
-    </main>
-    
-    <footer>
-        <p>Made by Your Name - <a href="https://www.example.com" target="_blank">here</a></p>
-    </footer>
-</body>
-</html>
+/* Apply flex container to body */
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Apply flex container to main */
+main {
+    display: flex;
+    flex: auto; /* Make main take up available space */
+}
+
+/* Style the header, article, aside, and footer */
+header, footer {
+    background: #f1f1f1; /* Optional: Add background color for visibility */
+    padding: 10px; /* Optional: Add padding */
+}
+
+article {
+    flex: 2; /* Take up 2/3 of the available width */
+    overflow-y: auto; /* Enable vertical scroll */
+    padding: 10px; /* Optional: Add padding */
+}
+
+aside {
+    flex: 1; /* Take up 1/3 of the available width */
+    overflow-y: auto; /* Enable vertical scroll */
+    padding: 10px; /* Optional: Add padding */
+    background: #e9e9e9; /* Optional: Add background color for visibility */
+}
+
+footer {
+    background: #f1f1f1; /* Optional: Add background color for visibility */
+    padding: 10px; /* Optional: Add padding */
+}
