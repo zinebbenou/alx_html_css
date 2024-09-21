@@ -37,8 +37,6 @@ alx_html_css/
 └── README.md
 
 
-Copy
-
 ## Getting Started
 
 1. **Clone the Repository**:
