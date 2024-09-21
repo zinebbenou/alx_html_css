@@ -1,0 +1,478 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Source Sans Pro;
+}
+
+/* navbar Page */
+.navp1 {
+    background-image: url(images/headphones_hero_1.jpg);
+    width: 100%;
+    height: 800px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header {
+    width: 100%;
+    height: 32px;
+}
+nav img {
+    width: 161px;
+    height: 32px;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 30px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+}
+nav ul li a:hover {
+    color: #FF6565;
+}
+.navp2 {
+    width: 100%;
+    padding-top: 18em;
+    color: white;
+    text-align: center;
+}
+.navp2 h1 {
+    font-size: 32px;
+}
+#n1 {
+    font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+.navp2 button {
+    width: 162px;
+    height: 44px;
+    border-radius: 22px;
+    border: none;
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
+    background-color: #FF6565;
+}
+.navp2 button:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+#n2 {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 300px;
+    padding: 70px 50px 0 50px;
+    height: 104px;
+    margin: auto;
+}
+.humberger {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    display: none;
+}
+.mbutton .x {
+    top: 30%;
+    height: 2px;
+    width: 18px;
+    background-color: white;
+    border-radius: 50px;
+    position: absolute;
+    transition: 0.3s ease;
+}
+.mbutton .y {
+    top: 50%;
+    height: 2px;
+    width: 13px;
+    background-color: white;
+    border-radius: 50px;
+    position: absolute;
+    transition: 0.3s ease;
+}
+.mbutton.z{
+    top: 70%;
+    height: 2px;
+    width: 18px;
+    background-color: white;
+    border-radius: 50px;
+    position: absolute;
+    transition: 0.3s ease;
+}
+
+#menu {
+    display: none;
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 480px) {
+    .page-1 {
+        height: 1000px;
+        width: 100%;
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+    nav ul li {
+        display: none;
+    }
+    #menu:checked~header nav ul li {
+        display: block;
+        padding-top: 15px;
+    }
+    .navp2{
+        width: 357px;
+        height: 436px;
+        margin: auto;
+    }
+    #n2 {
+        /* width: 400px; */
+        height: 182px;       
+        margin: auto;
+        padding-top: 40px;
+        
+    }
+
+    .humberger {
+        display: block;
+        margin: 35px 0 0 40px;
+    }
+    #menu:checked~ .mbutton .humberger .x {
+        top: 14px;
+        left: 2px;
+        width: 18px;
+        transform: rotate(45deg);
+    }
+    #menu:checked~ .mbutton .humberger .z{
+        top: 14px;
+        left: 2px;
+        width: 18px;
+        transform: rotate(-45deg);
+    }
+    #menu:checked~ .mbutton .humberger .y {
+        opacity: 0;
+    }
+    
+}
+    /* what we do page*/
+    .wsec{
+        width: 100%;
+        height: 100vh;
+        background-color: whitesmoke;
+    }
+    .wsec .wd1{
+        width: 50%;
+        margin: auto;
+        text-align: center;
+        padding-top: 100px;
+    }
+    .wd1 h2{
+        font-size: 32px;
+        font-family: sans-serif;
+        color: #071629;
+        animation-name: x;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+        animation-duration: 4s;
+    }
+    @keyframes x{
+        0%{translate: 0 0;
+            rotate: 0deg;
+
+        }
+        100%{ translate: 0 200px;
+            rotate: 360deg;
+
+        }
+    }
+    .wd1 p{
+        padding: 20px;
+        font-size: 16px;
+        font-family: sans-serif;
+        line-height: 25px;
+    }
+    .wd2{
+       
+        margin-top: 5%;
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        align-items: center;
+    }
+    .wd2 img{
+        margin: 20px;
+    }
+    .wd2 h3{margin: 10px;
+        font-family: sans-serif;
+        font-size: 18px;
+    
+    }
+    .wd2 p {
+        font-size: 14px;
+        font: 1em sans-serif;
+    }
+    @media only screen and (max-width: 480px) {
+        .wsec {
+            width: 100%;
+            margin: 0 auto 0 auto;
+            height: 100%;
+        }
+    
+        .wd1 {
+            width: 99%;
+            margin: 0 auto 0 auto;
+            text-align: center;
+        }
+    
+        .wd2 {
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            gap: 60px;
+            margin: 0 auto 0 auto;
+        }
+    
+        .wd2c {
+            text-align: center;
+        }
+    
+        .wd2c>p {
+            width: 100%;
+            max-width: 200px;
+            margin: 0 auto 0 auto;
+    
+        }
+    }
+     /* our resuls section */
+     .seco {
+        background-image: url(images/headphones_hero_2.jpg);
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: #ffffff;
+        text-align: center;
+        height: 130vh;
+    }
+    .secop1 {
+        width: 100%;
+        position: relative;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+    }
+    .secop1 h1 {
+        padding-bottom: 50px;
+        font-size: 32px;
+        font-family: sans-serif;
+        animation-name: y;
+        animation-delay: 2s;
+        animation-duration: 4s;
+    }
+    @keyframes y {
+        0%{translate: 0 0;
+            rotate: 0deg;
+            font-size: small;
+
+        }
+        100%{ translate: 0 200px;
+            rotate: 360deg;
+            font-size: xx-large;
+
+        }
+    }
+    .secop1 p {
+        font-size: 16px;
+        line-height: 25px;
+        width: 100%;
+        font-family: sans-serif;
+    }
+    .secop2{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: auto;
+        padding-top: 190px;
+        width: 100%;
+        text-align: center;
+    }
+    .bloc img {
+        width: 190px;
+        height: 190px;
+    }
+    .bloc> h1 {
+       transform: translateY(-400%);
+    }
+    .bloc > p {
+        transform: translateY(-460%);
+    }
+    @media only screen and (max-width: 480px) {
+        .seco{
+            height: 100%;
+        }
+    
+        .secop1{
+            text-align: center;
+            top: 200px;
+            width: 80%;
+        }
+    
+        .secop2{
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+        }
+    
+        .secop1>h2 {
+            max-width: 240px;
+            margin: 0 auto 0 auto;
+        }
+    }
+     /*contact section*/
+    
+     .contact-section {
+        background-color: #ffffff;
+        padding: 80px 0 80px 0;
+    }
+    
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        max-width: 1000px;
+        margin: 0 auto 0 auto;
+    }
+    
+    form>h2 {
+        text-align: center;
+        font-size: 30px;
+    }
+    
+    .form-content {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .myInput {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .myInput>label {
+        width: 95px;
+        font-size: 15px;
+    }
+    
+    .myInput>input {
+        outline: none;
+        border-left: 0;
+        border-right: 0;
+        border-top: 0;
+        width: 100%;
+        max-width: 200px;
+    }
+    
+    .myInput>label,
+    .myInput>input {
+        border-bottom: 2px solid #bebebe;
+    }
+    
+    #form-btn {
+        color: rgb(240, 255, 255);
+        background-color: #ff6565;
+        font-size: 12px;
+        border: none;
+        outline: none;
+        padding: 10px;
+        border-radius: 20px;
+        width: 130px;
+        cursor: pointer;
+        transition: opacity 0.6s ease;
+        margin: 0 auto 0 auto;
+    }
+    
+    #form-btn:hover,
+    #form-btn:active {
+        opacity: 0.9;
+    }
+     
+    /* footer section*/
+    footer {
+        background-color: #02001f;
+        padding: 60px 0 40px 0;
+    }
+    
+    .footer-sec {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+        width: 80%;
+        max-width: 1000px;
+        margin: 0 auto 0 auto;
+    }
+    
+    .footer-div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .footer-div>img {
+        width: 150px;
+        height: 30px;
+        cursor: pointer;
+    }
+    
+    .footer-icon {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    
+    }
+    
+    .footer-icon>a {
+        color: #f0ffff;
+        font-size: 30px;
+        cursor: pointer;
+        text-decoration: none;
+        transition: color 0.6s ease;
+    }
+    
+    .footer-icon>a:hover,
+    .footer-icon>a:active {
+        color: #ff6565;
+    }
+    
+    .footer-sec>p {
+        color: #828282;
+        font-size: 14px;
+        text-align: center;
+    }
+    @media only screen and (max-width: 480px) {
+        .footer-div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 20px;
+        }
+    }
