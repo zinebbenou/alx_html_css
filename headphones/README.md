@@ -1,6 +1,3 @@
-markdown
-
-Copy
 # Headphones Web Page Project
 
 ## Project Overview
