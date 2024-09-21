@@ -28,6 +28,7 @@ If you don't have these fonts installed, you can download them from the provided
   - Buttons: Change opacity to `0.9` on hover/active states.
 - **Content Centering**: The maximum width of the content is set to 1000px, centered on the page.
 
+
 ## Folder Structure
 
 alx_html_css/
@@ -36,6 +37,8 @@ alx_html_css/
 ├── styles.css
 └── README.md
 
+
+Copy
 
 ## Getting Started
 
@@ -58,7 +61,3 @@ Use semantic HTML elements.
 Ensure all images have alt text.
 Make sure color contrasts meet accessibility standards.
 Final Notes
-Feel free to adjust any values as needed, especially for float values. The goal is to achieve an accurate representation of the design while ensuring functionality and responsiveness.
-
-License
-This project is open source and available under the MIT License.
