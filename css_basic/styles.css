@@ -8,56 +8,97 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
+    font-family: 'Arial', sans-serif; /* Use a web-safe font */
+    color: #333; /* Set a readable text color */
+    padding: 20px; /* General padding */
 }
 
 /* Apply flex container to main */
 main {
     display: flex;
     flex: auto; /* Make main take up available space */
+    margin: 10px 0; /* Margin for spacing */
 }
 
-/* Ensure header and footer take the full width of the screen */
-header, footer {
-    width: 100%; /* Ensure full width */
-    background: #f1f1f1; /* Optional: Add background color for visibility */
-    padding: 10px; /* Optional: Add padding */
+/* Style the header */
+header {
+    background: #333; /* Dark background for header */
+    color: #fff; /* Light text color for contrast */
+    padding: 20px; /* Padding for header */
+    display: flex; /* Flexbox for header items */
+    align-items: center; /* Center align items vertically */
+}
+
+/* Style the logo in the header */
+header .logo {
+    font-size: 24px; /* Adjust size as needed */
+    font-weight: bold;
+    margin-right: 10px; /* Space between logo and other items */
+}
+
+/* Style links in the header */
+header a {
+    color: #fff; /* White text color for links */
+    text-decoration: none; /* Remove underline from links */
+    padding: 5px 10px; /* Add padding for better spacing */
+}
+
+header a:hover {
+    text-decoration: underline; /* Add underline on hover */
 }
 
 /* Style the article and aside */
+article, aside {
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px; /* Padding inside article and aside */
+    margin: 10px; /* Margin for spacing */
+    overflow-y: auto; /* Enable vertical scroll */
+}
+
+/* Flexbox properties for article and aside */
 article {
     flex: 2; /* Take up 2/3 of the available width */
-    overflow-y: auto; /* Enable vertical scroll */
-    padding: 10px; /* Optional: Add padding */
+    background: #f9f9f9; /* Light background for article */
 }
 
 aside {
     flex: 1; /* Take up 1/3 of the available width */
-    overflow-y: auto; /* Enable vertical scroll */
-    padding: 10px; /* Optional: Add padding */
-    background: #e9e9e9; /* Optional: Add background color for visibility */
+    background: #e9e9e9; /* Light background for aside */
 }
 
-/* Ensure footer takes the full width of the screen */
+/* Style the footer */
 footer {
-    width: 100%; /* Ensure full width */
-    background: #f1f1f1; /* Optional: Add background color for visibility */
-    padding: 10px; /* Optional: Add padding */
+    background: #333; /* Dark background for footer */
+    color: #fff; /* Light text color */
+    text-align: center; /* Center align text */
+    padding: 20px; /* Padding for footer */
 }
 
-/* Responsive Design: Adjust layout for small screens */
+/* Responsive adjustments */
 @media (max-width: 768px) {
-    body.works_on_smartphone {
-        /* Allow header and footer to take full width */
-        display: block;
-    }
-
     main {
         flex-direction: column; /* Stack article and aside vertically */
     }
 
     article, aside {
-        flex: none; /* Reset flex values */
-        width: 100%; /* Make each take full width */
-        overflow-y: visible; /* Allow full visibility */
+        flex: none; /* Reset flex properties */
+        width: 100%; /* Full width */
     }
+}
+
+/* Style tables */
+table {
+    width: 100%; /* Full width table */
+    border-collapse: collapse; /* Remove spacing between borders */
+}
+
+th, td {
+    border: 1px solid #ddd; /* Light border */
+    padding: 10px; /* Add padding for cells */
+    text-align: left; /* Align text to the left */
+}
+
+th {
+    background: #f4f4f4; /* Background for header cells */
 }
