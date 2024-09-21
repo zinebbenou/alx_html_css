@@ -1,85 +1,26 @@
-## Design Assets
+# Web Page Implementation
 
-- Figma design file: [Project in Figma](https://www.figma.com/file/kyCh81iR6Uq6gDTYPvBXhA/Holberton-School---Headphone-company)
-- Fonts used: 
-  - [Source Sans Pro](https://fonts.google.com/specimen/Source+Sans+Pro)
+In this project, we will create a fully functional web page from scratch using only HTML and CSS. Follow the design provided by Nicolas Philippot, UI/UX designer.
 
-## Project Structure
+## Requirements
+- No external CSS frameworks (e.g., Bootstrap)
+- No JavaScript
 
-headphones/
-│
-├── index.html
-├── styles.css
-├── images/
-│ └── (all required images)
-└── README.md
+## Tasks
+1. Familiarize yourself with the Figma design.
+   - Create an account on Figma and duplicate the project to your drafts for access to design details.
+   - [Access the Figma file] https://www.figma.com/file/TwFqqWGYvNYvxZxhdWXv4H/Holberton-School---Headphone-company.
 
-## Getting Started
+## Important Notes
+- If you lack the fonts used, download them here: [Source Sans Pro] https://www.fontsquirrel.com/fonts/source-sans-pro and [Spin Cycle OT] https://www.fontsquirrel.com/fonts/Spin-Cycle-OT.
+- Some values are in float; feel free to round them.
 
-1. Clone this repository
-2. Open `index.html` in your browser to view the website
-3. Edit the HTML and CSS files to match the design specifications
+## Interactions
+- The web page must switch to mobile version at screen width of 480px or less.
+- Links hover/active color: `#FF6565`
+- Button hover/active: opacity `0.9`
+- Max content width: 1000px, centered on the page.
 
-## Contributing
-
-This is a personal project for educational purposes. No contributions are currently needed.
-=======
-Headphones Web Page Project
-Project Overview
-In this project, you will create a fully functional web page from scratch using only HTML and CSS. The design is provided by Nicolas Philippot, and you’ll work to replicate it as closely as possible.
-
-Requirements
-No external CSS frameworks (e.g., Bootstrap).
-No JavaScript is allowed.
-The webpage must be responsive and adapt to a mobile layout when the screen width is 480px or less.
-Design Reference
-You can find the final design screens in Figma. Duplicate the project to your drafts for easy access to all design details.
-
-Fonts Used:
-
-Source Sans Pro
-Spin Cycle OT
-If you don't have these fonts installed, you can download them from the provided links.
-
-Key Features
-Responsive Design: The web page will switch to a mobile version at widths of 480px or less.
-Hover Effects:
-Links: Change color to #FF6565 on hover/active states.
-Buttons: Change opacity to 0.9 on hover/active states.
-Content Centering: The maximum width of the content is set to 1000px, centered on the page.
-
-Folder Structure
-
-alx_html_css/
-└── headphones/
-    ├── index.html
-    ├── styles.css
-    └── README.md
-Getting Started
-
-Navigate to the Directory:
-
-cd alx_html_css/headphones
-
-Open the HTML File:
-
-Open index.html in your web browser to view the webpage.
-
-Development Instructions
-
-Use index.html for your HTML structure.
-Use styles.css for your styling.
-Ensure that the webpage looks identical to the design provided in Figma.
-
-Accessibility Considerations
-
-Use semantic HTML elements.
-Ensure all images have alt text.
-Make sure color contrasts meet accessibility standards.
-
-Final Notes
-Feel free to adjust any values as needed, especially for float values. The goal is to achieve an accurate representation of the design while ensuring functionality and responsiveness.
-
-License
-This project is open source and available under the MIT License.
-
+## Repository
+- GitHub Repository: [alx_html_css] https://github.com/zinebbenou/alx_html_css/tree/main
+- Directory: `headphones`
