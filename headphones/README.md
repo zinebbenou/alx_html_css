@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ## Design Assets
 
 - Figma design file: [Project in Figma](https://www.figma.com/file/kyCh81iR6Uq6gDTYPvBXhA/Holberton-School---Headphone-company)
@@ -48,18 +47,15 @@ Hover Effects:
 Links: Change color to #FF6565 on hover/active states.
 Buttons: Change opacity to 0.9 on hover/active states.
 Content Centering: The maximum width of the content is set to 1000px, centered on the page.
+
 Folder Structure
 
-Copy
 alx_html_css/
 └── headphones/
     ├── index.html
     ├── styles.css
     └── README.md
 Getting Started
-Clone the Repository:
-
-git clone https://github.com/yourusername/alx_html_css.git
 
 Navigate to the Directory:
 
@@ -86,4 +82,4 @@ Feel free to adjust any values as needed, especially for float values. The goal 
 
 License
 This project is open source and available under the MIT License.
->>>>>>> origin/main
+
